@@ -1,0 +1,79 @@
+body{
+    background-color: navy;
+    background-image: url(flag.jpg);
+    display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*.img{
+    width: auto;
+    border: solid 2px black;
+}*/
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 350px;
+}
+
+
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    border-radius:500px;
+    animation: circle1-ani 10s linear infinite;
+    margin-top: 50px;
+  }
+
+  #Animation {
+    margin-right: 550px;
+    margin-left: 500px;
+    border: solid 2px;
+    border-radius: 10px;
+    animation: switch 5s linear infinite;
+    color: black;
+  }
+
+
+  .img2{
+width: 300px;
+margin-left: 550px;
+margin-top: 15px;
+animation: tea 10s linear infinite;
+  }
+
+
+  @keyframes tea{
+0% {}
+ 50%{ margin-top: 100px;} 
+100%{bottom: 30px;}
+}
+
+  @keyframes circle1-ani {
+    0%   { left:0; }
+    50%  { }
+    100% { left: 100%; }
+  }
+
+  @keyframes switch{
+    0%   {background-color:#ff0000;}
+    50% {background-color: blue}
+    100%  {background-color:white}
+    
+  }
+
+  @media all and (min-width: 30rem){
+    body {  background: blue; grid-template-columns: repeat(4,1fr) }
+    .fireworks{grid-template-columns: repeat(4,1fr) }
+    .img2{grid-template-columns: repeat(4,1fr) } 
+
+  }
+
+  @media all and (min-width: 50rem){
+   html { width: 30%; grid-template-columns: 1fr; }
+   html { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2rem; }
+  }         
+  
