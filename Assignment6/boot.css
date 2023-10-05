@@ -1,0 +1,55 @@
+header{
+    font-size: larger;
+    color: white;
+    /* position: absolute;
+    margin-left: 500px;
+    margin-bottom: 500px; */
+    background-image: var(bg-primary bg-gradient);
+    border: solid, white, 2px;
+}
+
+.blockquote-footer{
+    color: white;
+}
+
+.col{
+    border: solid 1px;
+    font-style: italic;
+    font-size: large;
+    border-radius: 10px;
+   text-decoration-color: aqua;
+   background-color: bisque;
+  
+}
+
+.css{
+    transform-origin: center;
+    animation: cfade 2.0s;
+}
+
+@keyframes cfade {
+    0%   { transform: translate(0, -500px);}
+    100% { transform: translate(0, 0);}
+  }
+
+footer{
+    margin-top: 397px;
+}
+
+body{
+    background-image: url(background.jpg);
+}
+
+
+/* .container text-center{
+    margin-top: 1000px;
+}
+
+nav{
+    margin-top: 300px;
+}
+
+img{
+    margin-left: 500px;
+   margin-top: 250px
+} */
